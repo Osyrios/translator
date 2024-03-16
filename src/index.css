@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: 'happy_schoolregular';
+    src: url('./fonts/happySchool/happy_school-webfont.woff2') format('woff2'),
+         url('./fonts/happySchool/happy_school-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

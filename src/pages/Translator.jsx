@@ -1,5 +1,4 @@
 import {useState} from "react";
-import {Home} from "./Home.jsx";
 import {Header} from "../Layout/Header.jsx";
 
 export function Translator() {
@@ -41,16 +40,29 @@ export function Translator() {
   return (
     <div>
       <Header/>
-      <div>
-        <input type="text" onChange={handleChangeInputText}/>
-        <select>
-          <option onClick={handleChangeTargetLang}>FR</option>
-          <option onClick={handleChangeTargetLang}>EN</option>
-          <option onClick={handleChangeTargetLang}>DE</option>
-          <option onClick={handleChangeTargetLang}>JA</option>
-        </select>
-        <button type="button" onClick={handleTranslation}> Traduire</button>
-        <p>{translatedText}</p>
+      <div className="mt-24 flex flex-col items-center">
+
+        <div className="flex flex-row items-center gap-7">
+          <textarea onChange={handleChangeInputText} className="border-4 border-blue-700 rounded-2xl"></textarea>
+          <div>
+            <label htmlFor="select">Traduire en:</label>
+            <select name="select" className="ms-3">
+              <option onClick={handleChangeTargetLang}>FR</option>
+              <option onClick={handleChangeTargetLang}>EN</option>
+              <option onClick={handleChangeTargetLang}>DE</option>
+              <option onClick={handleChangeTargetLang}>JA</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <button type="button" onClick={handleTranslation} className="mt-10 p-2 rounded-3xl bg-green-600 italic font-bold"> Traduire</button>
+        </div>
+
+        <div>
+          <p>{translatedText}</p>
+        </div>
+
       </div>
     </div>
   );
