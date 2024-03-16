@@ -1,6 +1,8 @@
 import {useState} from "react";
+import {Home} from "./Home.jsx";
+import {Header} from "../components/Header.jsx";
 
-export function Translate() {
+export function Translator() {
 
   const authKey = "8f04a00f-c154-ae44-3d9a-3f34fd6fcbb2:fx";
 
@@ -38,15 +40,18 @@ export function Translate() {
 
   return (
     <div>
-      <input type="text" onChange={handleChangeInputText}/>
-      <select>
-        <option onClick={handleChangeTargetLang}>FR</option>
-        <option onClick={handleChangeTargetLang}>EN</option>
-        <option onClick={handleChangeTargetLang}>DE</option>
-        <option onClick={handleChangeTargetLang}>JA</option>
-      </select>
-      <button type="button" onClick={handleTranslation}> Traduire</button>
-      <p>{translatedText}</p>
+      <Header/>
+      <div>
+        <input type="text" onChange={handleChangeInputText}/>
+        <select>
+          <option onClick={handleChangeTargetLang}>FR</option>
+          <option onClick={handleChangeTargetLang}>EN</option>
+          <option onClick={handleChangeTargetLang}>DE</option>
+          <option onClick={handleChangeTargetLang}>JA</option>
+        </select>
+        <button type="button" onClick={handleTranslation}> Traduire</button>
+        <p>{translatedText}</p>
+      </div>
     </div>
   );
 }
