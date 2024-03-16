@@ -1,10 +1,10 @@
-import {Test} from "./components/Test.jsx"
+import {Translate} from "./components/Translate.jsx"
 
 function App() {
 
   return <div>
     <h1>Hello world !</h1>
-    <Test/>
+    <Translate/>
   </div>
 }
 
