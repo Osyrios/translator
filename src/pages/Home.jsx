@@ -1,4 +1,4 @@
-import {Header} from "../components/Header.jsx";
+import {Header} from "../Layout/Header.jsx";
 
 export function Home(){
     return <div>
