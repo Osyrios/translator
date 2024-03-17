@@ -7,6 +7,8 @@ export default {
   theme: {
     fontFamily :{
       'happySchool': ['happy_schoolregular',],
+      'designer': ['designer'],
+      'roboto': ['roboto']
     },
     extend: {},
   },

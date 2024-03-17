@@ -1,5 +1,5 @@
 import {useState} from "react";
-import {Header} from "../Layout/Header.jsx";
+import {Header} from "../layout/Header.jsx";
 
 export function Translator() {
 
@@ -8,6 +8,7 @@ export function Translator() {
   const [translatedText, setTranslatedText] = useState('');
   const [inputText, setInputText] = useState('');
   const [targetLang, setTargetLang] = useState('');
+
 
   // Function for calling Deepl API
   const translateText = async (text, targetLang) => {
@@ -40,13 +41,15 @@ export function Translator() {
   return (
     <div>
       <Header/>
-      <div className="mt-24 flex flex-col items-center">
+      <div className="font-roboto mt-24 flex flex-col items-center">
 
-        <div className="flex flex-row items-center gap-7">
-          <textarea onChange={handleChangeInputText} className="border-4 border-blue-700 rounded-2xl"></textarea>
-          <div>
+        <div className="flex flex-col items-center justify-center">
+          <h3 className="text-center">Saisissez votre texte</h3>
+          <input onChange={handleChangeInputText} className=" text-center border-2 border-violet-500 p-2 rounded-2xl"/>
+
+          <div className="flex flex-col pt-5">
             <label htmlFor="select">Traduire en:</label>
-            <select name="select" className="ms-3">
+            <select name="select" className="ms-3 text-center rounded-2xl bg-violet-500 ">
               <option onClick={handleChangeTargetLang}>FR</option>
               <option onClick={handleChangeTargetLang}>EN</option>
               <option onClick={handleChangeTargetLang}>DE</option>
@@ -55,12 +58,13 @@ export function Translator() {
           </div>
         </div>
 
-        <div>
-          <button type="button" onClick={handleTranslation} className="mt-10 p-2 rounded-3xl bg-green-600 italic font-bold"> Traduire</button>
+        <div className="flex flex-row justify-center">
+          <button type="button" onClick={handleTranslation} className="mt-10 p-2 text-center rounded-3xl bg-violet-500 italic font-bold"> Traduire</button>
         </div>
 
-        <div>
-          <p>{translatedText}</p>
+        <div className="flex flex-col items-center mt-10 ">
+          <h3>Votre traduction</h3>
+          <p className="border p-3 m-2 rounded-2xl border-violet-500">{translatedText}</p>
         </div>
 
       </div>
