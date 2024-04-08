@@ -1,5 +1,6 @@
 import {useState} from "react";
 import {Header} from "../layout/Header.jsx";
+import {targetLangList} from "../components/targetLang.js";
 
 export function Translator() {
 
@@ -38,6 +39,8 @@ export function Translator() {
     setInputText(e.target.value)
   }
 
+
+
   return (
     <div>
       <Header/>
@@ -47,13 +50,13 @@ export function Translator() {
           <h3 className="text-center">Saisissez votre texte</h3>
           <input onChange={handleChangeInputText} className=" text-center border-2 border-violet-500 p-2 rounded-2xl"/>
 
-          <div className="flex flex-col pt-5">
+          <div className="flex flex-col items-center pt-5 overflow-hidden">
             <label htmlFor="select">Traduire en:</label>
-            <select name="select" className="ms-3 text-center rounded-2xl bg-violet-500 ">
-              <option onClick={handleChangeTargetLang}>FR</option>
-              <option onClick={handleChangeTargetLang}>EN</option>
-              <option onClick={handleChangeTargetLang}>DE</option>
-              <option onClick={handleChangeTargetLang}>JA</option>
+            <select name="select" className="ms-3 text-center rounded-2xl bg-violet-500 w-1/2">
+              {targetLangList.map((target)=>
+                <option key={target.id} onClick={handleChangeTargetLang} value={target.id}>{target.name}</option>
+              )}
+
             </select>
           </div>
         </div>
@@ -63,7 +66,7 @@ export function Translator() {
         </div>
 
         <div className="flex flex-col items-center mt-10 ">
-          <h3>Votre traduction</h3>
+          <h3>Résultat</h3>
           <p className="border p-3 m-2 rounded-2xl border-violet-500">{translatedText}</p>
         </div>
 
