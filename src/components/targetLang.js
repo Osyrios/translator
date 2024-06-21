@@ -1,4 +1,4 @@
-export const targetLang = [
+export const targetLangList = [
     {
         'id' : 'AR',
         'name': 'Arabic'
@@ -93,7 +93,7 @@ export const targetLang = [
     },
     {
         'id' : 'PT-PT',
-        'name': 'Portuguese (all Portuguese varieties excluding Brazilian Portuguese)'
+        'name': 'Portuguese'
     },
     {
         'id' : 'RO',
