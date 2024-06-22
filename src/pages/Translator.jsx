@@ -43,7 +43,8 @@ export function Translator() {
 
   return (
     <div>
-      <Header/>
+      <Header />
+      <h1 className="uppercase">Translation tool</h1>
       <div className="font-roboto mt-24 flex flex-col items-center">
 
         <div className="flex flex-col items-center justify-center">
