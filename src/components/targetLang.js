@@ -1,130 +1,134 @@
 export const targetLangList = [
     {
-        'id' : 'AR',
+        'id': '',
+        'name': 'Choisir une langue'
+    },
+    {
+        'id': 'AR',
         'name': 'Arabic'
     },
     {
-        'id' : 'BG',
+        'id': 'BG',
         'name': 'Bulgarian'
     },
     {
-        'id' : 'CS',
+        'id': 'CS',
         'name': 'Czech'
     },
     {
-        'id' : 'DA',
+        'id': 'DA',
         'name': 'Danish'
     },
     {
-        'id' : 'DE',
+        'id': 'DE',
         'name': 'German'
     },
     {
-        'id' : 'EL',
+        'id': 'EL',
         'name': 'Greek'
     },
     {
-        'id' : 'EN-GB',
+        'id': 'EN-GB',
         'name': 'English (British)'
     },
     {
-        'id' : 'EN-US',
+        'id': 'EN-US',
         'name': 'English (American)'
     },
     {
-        'id' : 'ES',
+        'id': 'ES',
         'name': 'Spanish'
     },
     {
-        'id' : 'ET',
+        'id': 'ET',
         'name': 'Estonian'
     },
     {
-        'id' : 'FI',
+        'id': 'FI',
         'name': 'Finnish'
     },
     {
-        'id' : 'FR',
+        'id': 'FR',
         'name': 'French'
     },
     {
-        'id' : 'HU',
+        'id': 'HU',
         'name': 'Hungarian'
     },
     {
-        'id' : 'ID',
+        'id': 'ID',
         'name': 'Indonesian'
     },
     {
-        'id' : 'IT',
+        'id': 'IT',
         'name': 'Italian'
     },
     {
-        'id' : 'JA',
+        'id': 'JA',
         'name': 'Japanese'
     },
     {
-        'id' : 'KO',
+        'id': 'KO',
         'name': 'Korean'
     },
     {
-        'id' : 'LT',
+        'id': 'LT',
         'name': 'Lithuanian'
     },
     {
-        'id' : 'LV',
+        'id': 'LV',
         'name': 'Latvian'
     },
     {
-        'id' : 'NB',
+        'id': 'NB',
         'name': 'Norwegian (Bokmål)'
     },
     {
-        'id' : 'NL',
+        'id': 'NL',
         'name': 'Dutch'
     },
     {
-        'id' : 'PL',
+        'id': 'PL',
         'name': 'Polish'
     },
     {
-        'id' : 'PT-BR',
+        'id': 'PT-BR',
         'name': 'Portuguese (Brazilian)'
     },
     {
-        'id' : 'PT-PT',
+        'id': 'PT-PT',
         'name': 'Portuguese'
     },
     {
-        'id' : 'RO',
+        'id': 'RO',
         'name': 'Romanian'
     },
     {
-        'id' : 'RU',
+        'id': 'RU',
         'name': 'Russian'
     },
     {
-        'id' : 'SK',
+        'id': 'SK',
         'name': 'Slovak'
     },
     {
-        'id' : 'SL',
+        'id': 'SL',
         'name': 'Slovenian'
     },
     {
-        'id' : 'SV',
+        'id': 'SV',
         'name': 'Swedish'
     },
     {
-        'id' : 'TR',
+        'id': 'TR',
         'name': 'Turkish'
     },
     {
-        'id' : 'UK',
+        'id': 'UK',
         'name': 'Ukrainian'
     },
     {
-        'id' : 'ZH',
+        'id': 'ZH',
         'name': 'Chinese (simplified)'
     },
-  ]
+]

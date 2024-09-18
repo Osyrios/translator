@@ -53,9 +53,9 @@ export function Translator() {
 
           <div className="flex flex-col items-center pt-5 overflow-hidden">
             <label htmlFor="select">Traduire en:</label>
-            <select name="select" className="ms-3 text-center rounded-2xl bg-violet-500 w-1/2">
+            <select name="select" onChange={handleChangeTargetLang} className="ms-3 text-center rounded-2xl bg-violet-500 px-3">
               {targetLangList.map((target)=>
-                <option key={target.id} onClick={handleChangeTargetLang} value={target.id}>{target.name}</option>
+                <option key={target.id} value={target.id}>{target.name}</option>
               )}
 
             </select>
